@@ -1,0 +1,16 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "svelte-cf",
+	"compatibility_date": "2025-01-24",
+	"pages_build_output_dir": ".svelte-kit/cloudflare",
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "d1_db",
+			"database_id": "2b1db537-982a-4434-9bb9-63442b47a17b"
+		}
+	]
+}
