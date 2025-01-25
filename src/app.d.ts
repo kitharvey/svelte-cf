@@ -9,6 +9,9 @@ declare global {
 			cf: CfProperties;
 			ctx: ExecutionContext;
 		}
+		interface Locals {
+			DB: DrizzleD1Database;
+		}
 	}
 }
 
