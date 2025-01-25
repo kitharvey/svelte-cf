@@ -21,7 +21,7 @@
 		"mig-prod": "npx wrangler d1 migrations apply DB"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^1.20250124.0",
+		"@cloudflare/workers-types": "^4.20250121.0",
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
 		"@sveltejs/adapter-cloudflare": "^5.0.1",
@@ -46,7 +46,7 @@
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.20.0",
 		"vite": "^5.4.11",
-		"wrangler": "^3.105.0"
+		"wrangler": "^3.105.1"
 	},
 	"dependencies": {
 		"@libsql/client": "^0.14.0",
@@ -54,6 +54,11 @@
 		"drizzle-orm": "^0.38.4"
 	},
 	"engines": {
-		"node": "^18.20.4"
+		"node": ">=18.17.1"
+	},
+	"pnpm": {
+		"overrides": {
+			"workerd": "npm:noop-package@1.0.0"
+		}
 	}
 }
