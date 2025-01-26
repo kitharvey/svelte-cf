@@ -7,3 +7,6 @@ binding = "DB"
 database_name = "d1_db"
 database_id = "2b1db537-982a-4434-9bb9-63442b47a17b"
 migrations_dir = "drizzle"
+
+[vars]
+NODE_VERSION = "22.13.1"
